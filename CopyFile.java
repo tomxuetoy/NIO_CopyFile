@@ -1,4 +1,6 @@
-// the original code is from link: http://alicsd.iteye.com/blog/834447
+package test;
+
+//the original code is from link: http://alicsd.iteye.com/blog/834447
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
@@ -7,8 +9,8 @@ import java.nio.channels.FileChannel;
 public class CopyFile {
 
 	public static void main(String[] args) throws Exception {
-		String infile = "/home/tomxue/mycode/0___GitHub/toy_Java_NIO_CopyFile/copy1.txt";
-		String outfile = "/home/tomxue/mycode/0___GitHub/toy_Java_NIO_CopyFile/copy2.txt";
+		String infile = "D:\\Dropbox\\VMware_share\\copy1.txt";		// path under Windows
+		String outfile = "D:\\Dropbox\\VMware_share\\copy2.txt";
 		// 获取源文件和目标文件的输入输出流
 		FileInputStream fin = new FileInputStream(infile);
 		FileOutputStream fout = new FileOutputStream(outfile);
